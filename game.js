@@ -1,3 +1,6 @@
+const start = require("./start.js");
+const end = require("./end.js");
+
 function game () {
 	this.words = ["computer", "bed", "shelf", "desk"];
 	this.chosenword = "";
@@ -12,6 +15,3 @@ game.prototype.getword = function(){
 	let random = Math.floor(Math.random() * this.words.length);
 	return this.words[random];
 }
-
-const game = require("./start.js");
-const end = require("./end.js");
