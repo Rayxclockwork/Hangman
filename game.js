@@ -1,6 +1,9 @@
 const start = require("./start.js");
 const end = require("./end.js");
 
+var inquirer = require("inquirer");
+var isLetter = require("is-letter");
+
 function game () {
 	this.words = ["computer", "bed", "shelf", "desk"];
 	this.chosenword = "";
